@@ -28,6 +28,7 @@ COPY src/ ./src/
 
 # Make sure the venv binaries are on PATH
 ENV PATH="/app/.venv/bin:$PATH" \
+    PYTHONPATH="/app/src" \
     PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1
 
