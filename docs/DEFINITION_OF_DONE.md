@@ -1,6 +1,6 @@
 ## Definition of Done (aplica a TODA issue antes de pasar a Done)
 
-Una issue solo se cierra si su PR cumple:
+Una issue solo se cierra si su PR cumple (o justifica explícitamente como N/A lo que no aplique, p. ej. PRs solo de documentación):
 
 - [ ] La lógica nueva tiene **unit tests** que la cubren, con dependencias externas fakeadas (sin red, sin DB). Si el core no se puede testear pasando fakes, es un fallo de diseño (acoplamiento core/adapter), no una excusa para no testear.
 - [ ] Todo lo que toca **DB o red real** tiene **integration tests** con Testcontainers (Postgres real levantado y destruido por el test).
